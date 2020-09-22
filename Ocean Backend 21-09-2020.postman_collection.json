@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "4dadcade-d015-449a-a4eb-75fd5219afd9",
+		"name": "Ocean Backend 21/09/2020",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ler todas as mensagens",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/mensagens",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mensagens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar mensagem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mensagem\": \"Hello world\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/mensagens",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mensagens"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
